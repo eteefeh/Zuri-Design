@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Zuri Design</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@100&family=Poppins:wght@400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 50%;
+        place-items: center;
+        padding: 50px;
+        height: 100vh;
+      }
+      .main-content {
+        margin: 0;
+        padding: 0;
+        width: 1000px;
+        background-image: url("bg-intro-desktop (1).png");
+        background-color: hsl(0, 100%, 74%);
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-areas:
+          "a b"
+          "a c";
+      }
+      .first-text {
+        padding: 2em;
+        color: white;
+      }
+      .first-text p {
+        font-size: 16px;
+        grid-area: a;
+        font-family: "Poppins", sans-serif;
+        color: white;
+      }
+      .first-box {
+        background-color: hsl(248, 32%, 49%);
+        grid-area: b;
+        font-family: "Poppins", sans-serif;
+        border-radius: 5px;
+        color: white;
+        width: 100px;
+      }
+      .second-box {
+        background-color: white;
+        grid-area: c;
+        font-family: "Poppins", sans-serif;
+        padding: 1em;
+      }
+      input {
+        font-family: "Poppins", sans-serif;
+        border-color: hsl(246, 25%, 77%);
+        border-radius: 5px;
+      }
+      #text1 {
+        background-image: url(icon-error.svg);
+        background-position: right;
+        padding-left: 30px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="main-content">
+        <div class="first-text">
+          <h3>Learn to code by watching others.</h3>
+          <p>
+            See how experienced developers work in real-time. Watching scripted
+            tutorial is great, but understanding developers think is invaluable.
+          </p>
+        </div>
+        <div class="first-box">
+          <p>Try it free 7 days then $20/mo. thereafter</p>
+        </div>
+        <div class="second-box">
+          <input type="text" value="Jonathan" name="text" id="text1"/>
+          <br />
+          <input type="text" value="Last Name" name="text" id="text1" />
+          <br />
+          <input type="email" value="Email" name="text" id="text1"/>
+          <br />
+          <input type="password" value="Password" name="text" id="text1" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

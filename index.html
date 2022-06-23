@@ -22,13 +22,14 @@
         padding: 50px;
         height: 100vh;
       }
+      
       .main-content {
         margin: 0;
         padding: 0;
         width: 1000px;
         align-items: center;
         justify-content: center;
-        display: grid;
+        display: flex;
         grid-template-areas:
           "a b"
           "a c";
@@ -36,6 +37,10 @@
       .first-text {
         padding: 2em;
         color: white;
+        margin: 6em;
+      }
+      .first-text h3 {
+        font-size: 25px;
       }
       .first-text p {
         font-size: 16px;
@@ -50,18 +55,42 @@
         border-radius: 5px;
         color: white;
         width: 250px;
+        height: 20px;
         font-size: 10px;
+        text-align: center;
+        margin: 2em;
+      }
+      .green {
+        background-color: green;
+        border-radius: 5px;
+        color: white;
+        width: 200px;
+        height: 20px;
+        text-align: center;
+        font-size: 10px;
+        margin: 1em;s
       }
       .second-box {
         background-color: white;
         grid-area: c;
         font-family: "Poppins", sans-serif;
-        padding: 1em;
+        padding: 1.2em;
+        width: 250px;
+        border-radius: 5px;
+        height: 250px;
+        margin: 2em;
+      }
+      .all-content {
+        padding: 2em;
+        margin: 2em;
       }
       input {
         font-family: "Poppins", sans-serif;
         border-color: hsl(246, 25%, 77%);
         border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
       }
       #text1 {
         background-image: url(icon-error.svg);
@@ -71,6 +100,9 @@
         background-repeat: no-repeat;
         border-radius: 5px;
         margin: 5px;
+      }
+      @media (max-width : 600px) {
+
       }
     </style>
   </head>
@@ -84,17 +116,22 @@
             tutorial is great, but understanding developers think is invaluable.
           </p>
         </div>
-        <div class="first-box">
-          <p>Try it free 7 days then $20/mo. thereafter</p>
-        </div>
-        <div class="second-box">
-          <input type="text" value="Jonathan" name="text" id="text1"/>
-          <br />
-          <input type="text" value="Last Name" name="text" id="text1" />
-          <br />
-          <input type="email" value="Email" name="text" id="text1"/>
-          <br />
-          <input type="password" value="Password" name="text" id="text1" />
+        <div class="all-content">
+          <div class="first-box">
+            <p>Try it free 7 days then $20/mo. thereafter</p>
+          </div>
+          <div class="second-box">
+            <input type="text" value="Jonathan" name="text" id="text1" />
+            <br />
+            <input type="text" value="Last Name" name="text" id="text1" />
+            <br />
+            <input type="email" value="Email" name="text" id="text1" />
+            <br />
+            <input type="password" value="Password" name="text" id="text1" />
+            <div class="green">
+              <p>Claim Your Free Trial</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
